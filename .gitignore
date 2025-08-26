@@ -28,8 +28,6 @@ wheels/
 
 
 # Data files (if large)
-*.csv
-*.data
 *.pkl
 *.joblib
 
