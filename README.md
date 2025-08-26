@@ -11,8 +11,8 @@ While I have experience with data analysis and basic machine learning concepts, 
 ## Project Structure
 ```
 income-classification-and-segmentation/
-├── data/                         # Data files
-│   ├── censusbureau.data         # Main dataset (40 variables + weight + label)
+├── data/                         # Data files (not included in repo)
+│   ├── census-bureau.data        # Main dataset (40 variables + weight + label)
 │   └── census-bureau.columns     # Column headers
 ├── src/                          # Source code
 │   ├── data_processing.py        # Data loading and preprocessing
@@ -35,7 +35,6 @@ income-classification-and-segmentation/
 
 ### Installation
 
-#### Step 1: Setup Project
 ```bash
 cd income-classification-and-segmentation
 
@@ -51,9 +50,16 @@ venv\Scripts\activate     # On Windows
 pip install -r requirements.txt
 ```
 
+### Data File Setup
+**Important**: The large data files are not included in this repository due to size constraints. To run the project:
+
+1. Place your census data file in the `data/` directory:
+   - `data/census-bureau.data` - Main dataset file
+   - `data/census-bureau.columns` - Column headers file
+
 ### Running the Project
 
-#### Option 1: Run via Python Scripts
+#### Run via Python Scripts
 ```bash
 # Make sure virtual environment is activated
 source venv/bin/activate  # On macOS/Linux
